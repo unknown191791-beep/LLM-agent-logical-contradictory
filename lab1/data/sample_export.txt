@@ -1,0 +1,687 @@
+EXPORT: 30 Diverse Samples
+======================================================================
+
+────────────────────────────────────────────────────────────
+Sample s0000
+────────────────────────────────────────────────────────────
+  Chain Length:      2
+  Conflicts:         0
+  Noise Facts:       0
+  Total Facts:       2
+  MIS:               3
+  Vote (Support:Oppose): 2:0
+  GT Vote Ratio:     1.00
+  Ground Truth:      True
+  Rationale:         Majority voting: 2 supporting facts (chain transitivity) vs 0 opposing facts (direct negations). GT = True (2:0).
+
+  Facts:
+    - A is a member of B.
+    - B is a member of C.
+  Question: Is A a member of C?
+
+────────────────────────────────────────────────────────────
+Sample s0002
+────────────────────────────────────────────────────────────
+  Chain Length:      2
+  Conflicts:         0
+  Noise Facts:       2
+  Total Facts:       4
+  MIS:               3
+  Vote (Support:Oppose): 2:0
+  GT Vote Ratio:     1.00
+  Ground Truth:      True
+  Rationale:         Majority voting: 2 supporting facts (chain transitivity) vs 0 opposing facts (direct negations). GT = True (2:0).
+
+  Facts:
+    - G is a member of H.
+    - H is a member of I.
+    - P is a member of L.  [NOISE]
+    - K is a member of U.  [NOISE]
+  Question: Is G a member of I?
+
+────────────────────────────────────────────────────────────
+Sample s0004
+────────────────────────────────────────────────────────────
+  Chain Length:      2
+  Conflicts:         0
+  Noise Facts:       5
+  Total Facts:       7
+  MIS:               3
+  Vote (Support:Oppose): 2:0
+  GT Vote Ratio:     1.00
+  Ground Truth:      True
+  Rationale:         Majority voting: 2 supporting facts (chain transitivity) vs 0 opposing facts (direct negations). GT = True (2:0).
+
+  Facts:
+    - M is a member of N.
+    - N is a member of O.
+    - J is a member of W.  [NOISE]
+    - K is a member of G.  [NOISE]
+    - U is a member of H.  [NOISE]
+    - I is a member of Y.  [NOISE]
+    - Z is a member of P.  [NOISE]
+  Question: Is M a member of O?
+
+────────────────────────────────────────────────────────────
+Sample s0006
+────────────────────────────────────────────────────────────
+  Chain Length:      2
+  Conflicts:         1
+  Noise Facts:       0
+  Total Facts:       3
+  MIS:               3
+  Vote (Support:Oppose): 2:1
+  GT Vote Ratio:     0.67
+  Ground Truth:      True
+  Rationale:         Majority voting: 2 supporting facts (chain transitivity) vs 1 opposing facts (direct negations). GT = True (2:1).
+
+  Facts:
+    - S is a member of T.
+    - T is a member of U.
+    - S is not a member of U.  <-- NEGATION
+  Question: Is S a member of U?
+
+────────────────────────────────────────────────────────────
+Sample s0008
+────────────────────────────────────────────────────────────
+  Chain Length:      2
+  Conflicts:         1
+  Noise Facts:       2
+  Total Facts:       5
+  MIS:               3
+  Vote (Support:Oppose): 2:1
+  GT Vote Ratio:     0.67
+  Ground Truth:      True
+  Rationale:         Majority voting: 2 supporting facts (chain transitivity) vs 1 opposing facts (direct negations). GT = True (2:1).
+
+  Facts:
+    - Y is a member of Z.
+    - Z is a member of AA.
+    - Y is not a member of AA.  <-- NEGATION
+    - L is a member of G.  [NOISE]
+    - J is a member of L.  [NOISE]
+  Question: Is Y a member of AA?
+
+────────────────────────────────────────────────────────────
+Sample s0010
+────────────────────────────────────────────────────────────
+  Chain Length:      2
+  Conflicts:         1
+  Noise Facts:       5
+  Total Facts:       8
+  MIS:               3
+  Vote (Support:Oppose): 2:1
+  GT Vote Ratio:     0.67
+  Ground Truth:      True
+  Rationale:         Majority voting: 2 supporting facts (chain transitivity) vs 1 opposing facts (direct negations). GT = True (2:1).
+
+  Facts:
+    - AE is a member of AF.
+    - AF is a member of AG.
+    - AE is not a member of AG.  <-- NEGATION
+    - X is a member of P.  [NOISE]
+    - L is a member of S.  [NOISE]
+    - S is a member of W.  [NOISE]
+    - L is a member of J.  [NOISE]
+    - V is a member of X.  [NOISE]
+  Question: Is AE a member of AG?
+
+────────────────────────────────────────────────────────────
+Sample s0018
+────────────────────────────────────────────────────────────
+  Chain Length:      2
+  Conflicts:         4
+  Noise Facts:       0
+  Total Facts:       6
+  MIS:               3
+  Vote (Support:Oppose): 2:4
+  GT Vote Ratio:     0.33
+  Ground Truth:      False
+  Rationale:         Majority voting: 2 supporting facts (chain transitivity) vs 4 opposing facts (direct negations). GT = False (2:4).
+
+  Facts:
+    - BC is a member of BD.
+    - BD is a member of BE.
+    - BC is not a member of BE.  <-- NEGATION
+    - BC is not a member of BE.  <-- NEGATION
+    - BC is not a member of BE.  <-- NEGATION
+    - BC is not a member of BE.  <-- NEGATION
+  Question: Is BC a member of BE?
+
+────────────────────────────────────────────────────────────
+Sample s0020
+────────────────────────────────────────────────────────────
+  Chain Length:      2
+  Conflicts:         4
+  Noise Facts:       2
+  Total Facts:       8
+  MIS:               3
+  Vote (Support:Oppose): 2:4
+  GT Vote Ratio:     0.33
+  Ground Truth:      False
+  Rationale:         Majority voting: 2 supporting facts (chain transitivity) vs 4 opposing facts (direct negations). GT = False (2:4).
+
+  Facts:
+    - BI is a member of BJ.
+    - BJ is a member of BK.
+    - BI is not a member of BK.  <-- NEGATION
+    - BI is not a member of BK.  <-- NEGATION
+    - BI is not a member of BK.  <-- NEGATION
+    - BI is not a member of BK.  <-- NEGATION
+    - Z is a member of J.  [NOISE]
+    - G is a member of P.  [NOISE]
+  Question: Is BI a member of BK?
+
+────────────────────────────────────────────────────────────
+Sample s0022
+────────────────────────────────────────────────────────────
+  Chain Length:      2
+  Conflicts:         4
+  Noise Facts:       5
+  Total Facts:       11
+  MIS:               3
+  Vote (Support:Oppose): 2:4
+  GT Vote Ratio:     0.33
+  Ground Truth:      False
+  Rationale:         Majority voting: 2 supporting facts (chain transitivity) vs 4 opposing facts (direct negations). GT = False (2:4).
+
+  Facts:
+    - BO is a member of BP.
+    - BP is a member of BQ.
+    - BO is not a member of BQ.  <-- NEGATION
+    - BO is not a member of BQ.  <-- NEGATION
+    - BO is not a member of BQ.  <-- NEGATION
+    - BO is not a member of BQ.  <-- NEGATION
+    - S is a member of K.  [NOISE]
+    - N is a member of Z.  [NOISE]
+    - M is a member of U.  [NOISE]
+    - M is a member of O.  [NOISE]
+    - Q is a member of U.  [NOISE]
+  Question: Is BO a member of BQ?
+
+────────────────────────────────────────────────────────────
+Sample s0024
+────────────────────────────────────────────────────────────
+  Chain Length:      3
+  Conflicts:         0
+  Noise Facts:       0
+  Total Facts:       3
+  MIS:               4
+  Vote (Support:Oppose): 3:0
+  GT Vote Ratio:     1.00
+  Ground Truth:      True
+  Rationale:         Majority voting: 3 supporting facts (chain transitivity) vs 0 opposing facts (direct negations). GT = True (3:0).
+
+  Facts:
+    - BU is a member of BV.
+    - BV is a member of BW.
+    - BW is a member of BX.
+  Question: Is BU a member of BX?
+
+────────────────────────────────────────────────────────────
+Sample s0026
+────────────────────────────────────────────────────────────
+  Chain Length:      3
+  Conflicts:         0
+  Noise Facts:       2
+  Total Facts:       5
+  MIS:               4
+  Vote (Support:Oppose): 3:0
+  GT Vote Ratio:     1.00
+  Ground Truth:      True
+  Rationale:         Majority voting: 3 supporting facts (chain transitivity) vs 0 opposing facts (direct negations). GT = True (3:0).
+
+  Facts:
+    - CC is a member of CD.
+    - CD is a member of CE.
+    - CE is a member of CF.
+    - Y is a member of G.  [NOISE]
+    - W is a member of Z.  [NOISE]
+  Question: Is CC a member of CF?
+
+────────────────────────────────────────────────────────────
+Sample s0028
+────────────────────────────────────────────────────────────
+  Chain Length:      3
+  Conflicts:         0
+  Noise Facts:       5
+  Total Facts:       8
+  MIS:               4
+  Vote (Support:Oppose): 3:0
+  GT Vote Ratio:     1.00
+  Ground Truth:      True
+  Rationale:         Majority voting: 3 supporting facts (chain transitivity) vs 0 opposing facts (direct negations). GT = True (3:0).
+
+  Facts:
+    - CK is a member of CL.
+    - CL is a member of CM.
+    - CM is a member of CN.
+    - V is a member of H.  [NOISE]
+    - V is a member of L.  [NOISE]
+    - S is a member of U.  [NOISE]
+    - R is a member of J.  [NOISE]
+    - G is a member of W.  [NOISE]
+  Question: Is CK a member of CN?
+
+────────────────────────────────────────────────────────────
+Sample s0030
+────────────────────────────────────────────────────────────
+  Chain Length:      3
+  Conflicts:         1
+  Noise Facts:       0
+  Total Facts:       4
+  MIS:               4
+  Vote (Support:Oppose): 3:1
+  GT Vote Ratio:     0.75
+  Ground Truth:      True
+  Rationale:         Majority voting: 3 supporting facts (chain transitivity) vs 1 opposing facts (direct negations). GT = True (3:1).
+
+  Facts:
+    - CS is a member of CT.
+    - CT is a member of CU.
+    - CU is a member of CV.
+    - CS is not a member of CV.  <-- NEGATION
+  Question: Is CS a member of CV?
+
+────────────────────────────────────────────────────────────
+Sample s0032
+────────────────────────────────────────────────────────────
+  Chain Length:      3
+  Conflicts:         1
+  Noise Facts:       2
+  Total Facts:       6
+  MIS:               4
+  Vote (Support:Oppose): 3:1
+  GT Vote Ratio:     0.75
+  Ground Truth:      True
+  Rationale:         Majority voting: 3 supporting facts (chain transitivity) vs 1 opposing facts (direct negations). GT = True (3:1).
+
+  Facts:
+    - DA is a member of DB.
+    - DB is a member of DC.
+    - DC is a member of DD.
+    - DA is not a member of DD.  <-- NEGATION
+    - U is a member of M.  [NOISE]
+    - K is a member of P.  [NOISE]
+  Question: Is DA a member of DD?
+
+────────────────────────────────────────────────────────────
+Sample s0034
+────────────────────────────────────────────────────────────
+  Chain Length:      3
+  Conflicts:         1
+  Noise Facts:       5
+  Total Facts:       9
+  MIS:               4
+  Vote (Support:Oppose): 3:1
+  GT Vote Ratio:     0.75
+  Ground Truth:      True
+  Rationale:         Majority voting: 3 supporting facts (chain transitivity) vs 1 opposing facts (direct negations). GT = True (3:1).
+
+  Facts:
+    - DI is a member of DJ.
+    - DJ is a member of DK.
+    - DK is a member of DL.
+    - DI is not a member of DL.  <-- NEGATION
+    - Y is a member of N.  [NOISE]
+    - U is a member of S.  [NOISE]
+    - J is a member of N.  [NOISE]
+    - I is a member of G.  [NOISE]
+    - G is a member of U.  [NOISE]
+  Question: Is DI a member of DL?
+
+────────────────────────────────────────────────────────────
+Sample s0036
+────────────────────────────────────────────────────────────
+  Chain Length:      3
+  Conflicts:         2
+  Noise Facts:       0
+  Total Facts:       5
+  MIS:               4
+  Vote (Support:Oppose): 3:2
+  GT Vote Ratio:     0.60
+  Ground Truth:      True
+  Rationale:         Majority voting: 3 supporting facts (chain transitivity) vs 2 opposing facts (direct negations). GT = True (3:2).
+
+  Facts:
+    - DQ is a member of DR.
+    - DR is a member of DS.
+    - DS is a member of DT.
+    - DQ is not a member of DT.  <-- NEGATION
+    - DQ is not a member of DT.  <-- NEGATION
+  Question: Is DQ a member of DT?
+
+────────────────────────────────────────────────────────────
+Sample s0038
+────────────────────────────────────────────────────────────
+  Chain Length:      3
+  Conflicts:         2
+  Noise Facts:       2
+  Total Facts:       7
+  MIS:               4
+  Vote (Support:Oppose): 3:2
+  GT Vote Ratio:     0.60
+  Ground Truth:      True
+  Rationale:         Majority voting: 3 supporting facts (chain transitivity) vs 2 opposing facts (direct negations). GT = True (3:2).
+
+  Facts:
+    - DY is a member of DZ.
+    - DZ is a member of EA.
+    - EA is a member of EB.
+    - DY is not a member of EB.  <-- NEGATION
+    - DY is not a member of EB.  <-- NEGATION
+    - T is a member of Q.  [NOISE]
+    - N is a member of J.  [NOISE]
+  Question: Is DY a member of EB?
+
+────────────────────────────────────────────────────────────
+Sample s0040
+────────────────────────────────────────────────────────────
+  Chain Length:      3
+  Conflicts:         2
+  Noise Facts:       5
+  Total Facts:       10
+  MIS:               4
+  Vote (Support:Oppose): 3:2
+  GT Vote Ratio:     0.60
+  Ground Truth:      True
+  Rationale:         Majority voting: 3 supporting facts (chain transitivity) vs 2 opposing facts (direct negations). GT = True (3:2).
+
+  Facts:
+    - EG is a member of EH.
+    - EH is a member of EI.
+    - EI is a member of EJ.
+    - EG is not a member of EJ.  <-- NEGATION
+    - EG is not a member of EJ.  <-- NEGATION
+    - Y is a member of Q.  [NOISE]
+    - Y is a member of T.  [NOISE]
+    - I is a member of W.  [NOISE]
+    - M is a member of U.  [NOISE]
+    - J is a member of K.  [NOISE]
+  Question: Is EG a member of EJ?
+
+────────────────────────────────────────────────────────────
+Sample s0042
+────────────────────────────────────────────────────────────
+  Chain Length:      3
+  Conflicts:         4
+  Noise Facts:       0
+  Total Facts:       7
+  MIS:               4
+  Vote (Support:Oppose): 3:4
+  GT Vote Ratio:     0.43
+  Ground Truth:      False
+  Rationale:         Majority voting: 3 supporting facts (chain transitivity) vs 4 opposing facts (direct negations). GT = False (3:4).
+
+  Facts:
+    - EO is a member of EP.
+    - EP is a member of EQ.
+    - EQ is a member of ER.
+    - EO is not a member of ER.  <-- NEGATION
+    - EO is not a member of ER.  <-- NEGATION
+    - EO is not a member of ER.  <-- NEGATION
+    - EO is not a member of ER.  <-- NEGATION
+  Question: Is EO a member of ER?
+
+────────────────────────────────────────────────────────────
+Sample s0044
+────────────────────────────────────────────────────────────
+  Chain Length:      3
+  Conflicts:         4
+  Noise Facts:       2
+  Total Facts:       9
+  MIS:               4
+  Vote (Support:Oppose): 3:4
+  GT Vote Ratio:     0.43
+  Ground Truth:      False
+  Rationale:         Majority voting: 3 supporting facts (chain transitivity) vs 4 opposing facts (direct negations). GT = False (3:4).
+
+  Facts:
+    - EW is a member of EX.
+    - EX is a member of EY.
+    - EY is a member of EZ.
+    - EW is not a member of EZ.  <-- NEGATION
+    - EW is not a member of EZ.  <-- NEGATION
+    - EW is not a member of EZ.  <-- NEGATION
+    - EW is not a member of EZ.  <-- NEGATION
+    - V is a member of O.  [NOISE]
+    - K is a member of I.  [NOISE]
+  Question: Is EW a member of EZ?
+
+────────────────────────────────────────────────────────────
+Sample s0046
+────────────────────────────────────────────────────────────
+  Chain Length:      3
+  Conflicts:         4
+  Noise Facts:       5
+  Total Facts:       12
+  MIS:               4
+  Vote (Support:Oppose): 3:4
+  GT Vote Ratio:     0.43
+  Ground Truth:      False
+  Rationale:         Majority voting: 3 supporting facts (chain transitivity) vs 4 opposing facts (direct negations). GT = False (3:4).
+
+  Facts:
+    - FE is a member of FF.
+    - FF is a member of FG.
+    - FG is a member of FH.
+    - FE is not a member of FH.  <-- NEGATION
+    - FE is not a member of FH.  <-- NEGATION
+    - FE is not a member of FH.  <-- NEGATION
+    - FE is not a member of FH.  <-- NEGATION
+    - J is a member of Y.  [NOISE]
+    - R is a member of K.  [NOISE]
+    - O is a member of X.  [NOISE]
+    - Y is a member of H.  [NOISE]
+    - V is a member of W.  [NOISE]
+  Question: Is FE a member of FH?
+
+────────────────────────────────────────────────────────────
+Sample s0048
+────────────────────────────────────────────────────────────
+  Chain Length:      4
+  Conflicts:         0
+  Noise Facts:       0
+  Total Facts:       4
+  MIS:               5
+  Vote (Support:Oppose): 4:0
+  GT Vote Ratio:     1.00
+  Ground Truth:      True
+  Rationale:         Majority voting: 4 supporting facts (chain transitivity) vs 0 opposing facts (direct negations). GT = True (4:0).
+
+  Facts:
+    - FM is a member of FN.
+    - FN is a member of FO.
+    - FO is a member of FP.
+    - FP is a member of FQ.
+  Question: Is FM a member of FQ?
+
+────────────────────────────────────────────────────────────
+Sample s0050
+────────────────────────────────────────────────────────────
+  Chain Length:      4
+  Conflicts:         0
+  Noise Facts:       2
+  Total Facts:       6
+  MIS:               5
+  Vote (Support:Oppose): 4:0
+  GT Vote Ratio:     1.00
+  Ground Truth:      True
+  Rationale:         Majority voting: 4 supporting facts (chain transitivity) vs 0 opposing facts (direct negations). GT = True (4:0).
+
+  Facts:
+    - FW is a member of FX.
+    - FX is a member of FY.
+    - FY is a member of FZ.
+    - FZ is a member of GA.
+    - I is a member of L.  [NOISE]
+    - O is a member of I.  [NOISE]
+  Question: Is FW a member of GA?
+
+────────────────────────────────────────────────────────────
+Sample s0052
+────────────────────────────────────────────────────────────
+  Chain Length:      4
+  Conflicts:         0
+  Noise Facts:       5
+  Total Facts:       9
+  MIS:               5
+  Vote (Support:Oppose): 4:0
+  GT Vote Ratio:     1.00
+  Ground Truth:      True
+  Rationale:         Majority voting: 4 supporting facts (chain transitivity) vs 0 opposing facts (direct negations). GT = True (4:0).
+
+  Facts:
+    - GG is a member of GH.
+    - GH is a member of GI.
+    - GI is a member of GJ.
+    - GJ is a member of GK.
+    - Q is a member of Z.  [NOISE]
+    - X is a member of T.  [NOISE]
+    - W is a member of R.  [NOISE]
+    - U is a member of Q.  [NOISE]
+    - Y is a member of M.  [NOISE]
+  Question: Is GG a member of GK?
+
+────────────────────────────────────────────────────────────
+Sample s0054
+────────────────────────────────────────────────────────────
+  Chain Length:      4
+  Conflicts:         1
+  Noise Facts:       0
+  Total Facts:       5
+  MIS:               5
+  Vote (Support:Oppose): 4:1
+  GT Vote Ratio:     0.80
+  Ground Truth:      True
+  Rationale:         Majority voting: 4 supporting facts (chain transitivity) vs 1 opposing facts (direct negations). GT = True (4:1).
+
+  Facts:
+    - GQ is a member of GR.
+    - GR is a member of GS.
+    - GS is a member of GT.
+    - GT is a member of GU.
+    - GQ is not a member of GU.  <-- NEGATION
+  Question: Is GQ a member of GU?
+
+────────────────────────────────────────────────────────────
+Sample s0056
+────────────────────────────────────────────────────────────
+  Chain Length:      4
+  Conflicts:         1
+  Noise Facts:       2
+  Total Facts:       7
+  MIS:               5
+  Vote (Support:Oppose): 4:1
+  GT Vote Ratio:     0.80
+  Ground Truth:      True
+  Rationale:         Majority voting: 4 supporting facts (chain transitivity) vs 1 opposing facts (direct negations). GT = True (4:1).
+
+  Facts:
+    - HA is a member of HB.
+    - HB is a member of HC.
+    - HC is a member of HD.
+    - HD is a member of HE.
+    - HA is not a member of HE.  <-- NEGATION
+    - Q is a member of H.  [NOISE]
+    - S is a member of K.  [NOISE]
+  Question: Is HA a member of HE?
+
+────────────────────────────────────────────────────────────
+Sample s0058
+────────────────────────────────────────────────────────────
+  Chain Length:      4
+  Conflicts:         1
+  Noise Facts:       5
+  Total Facts:       10
+  MIS:               5
+  Vote (Support:Oppose): 4:1
+  GT Vote Ratio:     0.80
+  Ground Truth:      True
+  Rationale:         Majority voting: 4 supporting facts (chain transitivity) vs 1 opposing facts (direct negations). GT = True (4:1).
+
+  Facts:
+    - HK is a member of HL.
+    - HL is a member of HM.
+    - HM is a member of HN.
+    - HN is a member of HO.
+    - HK is not a member of HO.  <-- NEGATION
+    - K is a member of S.  [NOISE]
+    - Y is a member of N.  [NOISE]
+    - R is a member of I.  [NOISE]
+    - P is a member of Y.  [NOISE]
+    - P is a member of W.  [NOISE]
+  Question: Is HK a member of HO?
+
+────────────────────────────────────────────────────────────
+Sample s0060
+────────────────────────────────────────────────────────────
+  Chain Length:      4
+  Conflicts:         2
+  Noise Facts:       0
+  Total Facts:       6
+  MIS:               5
+  Vote (Support:Oppose): 4:2
+  GT Vote Ratio:     0.67
+  Ground Truth:      True
+  Rationale:         Majority voting: 4 supporting facts (chain transitivity) vs 2 opposing facts (direct negations). GT = True (4:2).
+
+  Facts:
+    - HU is a member of HV.
+    - HV is a member of HW.
+    - HW is a member of HX.
+    - HX is a member of HY.
+    - HU is not a member of HY.  <-- NEGATION
+    - HU is not a member of HY.  <-- NEGATION
+  Question: Is HU a member of HY?
+
+────────────────────────────────────────────────────────────
+Sample s0062
+────────────────────────────────────────────────────────────
+  Chain Length:      4
+  Conflicts:         2
+  Noise Facts:       2
+  Total Facts:       8
+  MIS:               5
+  Vote (Support:Oppose): 4:2
+  GT Vote Ratio:     0.67
+  Ground Truth:      True
+  Rationale:         Majority voting: 4 supporting facts (chain transitivity) vs 2 opposing facts (direct negations). GT = True (4:2).
+
+  Facts:
+    - IE is a member of IF.
+    - IF is a member of IG.
+    - IG is a member of IH.
+    - IH is a member of II.
+    - IE is not a member of II.  <-- NEGATION
+    - IE is not a member of II.  <-- NEGATION
+    - Q is a member of U.  [NOISE]
+    - T is a member of W.  [NOISE]
+  Question: Is IE a member of II?
+
+────────────────────────────────────────────────────────────
+Sample s0064
+────────────────────────────────────────────────────────────
+  Chain Length:      4
+  Conflicts:         2
+  Noise Facts:       5
+  Total Facts:       11
+  MIS:               5
+  Vote (Support:Oppose): 4:2
+  GT Vote Ratio:     0.67
+  Ground Truth:      True
+  Rationale:         Majority voting: 4 supporting facts (chain transitivity) vs 2 opposing facts (direct negations). GT = True (4:2).
+
+  Facts:
+    - IO is a member of IP.
+    - IP is a member of IQ.
+    - IQ is a member of IR.
+    - IR is a member of IS.
+    - IO is not a member of IS.  <-- NEGATION
+    - IO is not a member of IS.  <-- NEGATION
+    - O is a member of N.  [NOISE]
+    - V is a member of O.  [NOISE]
+    - Q is a member of M.  [NOISE]
+    - J is a member of P.  [NOISE]
+    - H is a member of Z.  [NOISE]
+  Question: Is IO a member of IS?

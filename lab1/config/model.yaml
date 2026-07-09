@@ -1,0 +1,41 @@
+# LLM Model Configuration
+# Switch models by changing the active profile
+
+active: "deepseek"
+
+qwen:
+  provider: "qwen"
+  model: "qwen-turbo"
+  max_tokens: 4096
+  temperature: 0.0
+  input_price_per_mtok: 0.04
+  output_price_per_mtok: 0.08
+
+deepseek:
+  provider: "deepseek"
+  model: "deepseek-v4-pro"
+  max_tokens: 4096
+  temperature: 0.0
+  input_price_per_mtok: 0.14
+  output_price_per_mtok: 0.28
+
+haiku:
+  provider: "anthropic"
+  model: "claude-haiku-3-5-20241022"
+  max_tokens: 1024
+  temperature: 0.0
+  input_price_per_mtok: 0.80
+  output_price_per_mtok: 4.00
+
+sonnet:
+  provider: "anthropic"
+  model: "claude-sonnet-4-20250514"
+  max_tokens: 1024
+  temperature: 0.0
+  input_price_per_mtok: 3.00
+  output_price_per_mtok: 15.00
+
+api:
+  timeout_seconds: 120
+  max_retries: 3
+  retry_delay_seconds: 3

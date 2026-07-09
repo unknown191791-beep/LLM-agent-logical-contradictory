@@ -1,0 +1,45 @@
+# Experiment Configuration
+# MVP factorial design for transitivity_break conflicts
+
+# ── Sampling Parameters ──
+sampling:
+  # Chain length: number of hops from subject to object (≥2)
+  # e.g., chain_length=2 means A→B→C, question is A∈C?
+  chain_lengths: [2, 3, 4]
+
+  # Conflict counts to test
+  conflict_counts: [0, 1, 2]
+
+  # Noise fact counts to test
+  noise_counts: [0, 3, 6]
+
+  # Number of distinct samples per parameter combination
+  samples_per_condition: 10
+
+  # Fixed parameters (not varied in MVP)
+  fixed:
+    conflict_type: "transitivity_break"   # only this type in MVP
+    conflict_position: "late"              # conflict at the end of chain
+    noise_type: "irrelevant"               # random unrelated facts
+    entity_scheme: "abstract"              # A, B, C, ... naming
+    question_relation: "member_of"         # what we ask about
+
+  # Random seed for reproducibility
+  seed: 42
+
+# ── Execution Parameters ──
+execution:
+  workflows: ["react", "plan_solve"]
+  repeats_per_sample: 3
+  adaptive_repeats: true          # stop early if all repeats agree
+  max_total_repeats: 5            # max repeats when adaptive
+  rate_limit_delay: 0.5           # seconds between API calls
+
+# ── Output ──
+output:
+  data_dir: "data"
+  results_dir: "data/results"
+  figures_dir: "outputs/figures"
+  reports_dir: "outputs/reports"
+  save_raw_responses: true
+  save_reasoning_traces: true

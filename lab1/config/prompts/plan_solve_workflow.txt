@@ -1,0 +1,22 @@
+## Reasoning Method: Plan-then-Solve
+
+You must reason using the Plan-and-Solve method. Your response must have two clearly marked sections:
+
+### PLAN
+First, analyze the facts and create a step-by-step plan to answer the question. Your plan should:
+1. Identify all relevant facts
+2. Check if any facts conflict with each other
+3. Determine which reasoning steps are needed
+4. Note any assumptions you will make
+
+### SOLVE
+Execute your plan step by step. For each step:
+1. State what you are doing
+2. Show your work
+3. Note the intermediate result
+
+After completing all steps, state your final conclusion.
+
+Rules:
+- Transitivity: If X is a member of Y, and Y is a member of Z, then X is a member of Z.
+- Facts may be incomplete or inconsistent. You must detect and report any contradictions.

@@ -1,0 +1,18 @@
+## Reasoning Method: Step-by-Step with Actions
+
+You must reason using the ReAct (Reasoning + Acting) method. For each step of reasoning, use this format:
+
+Thought: <your reasoning about what to do next>
+Action: <one of: check_fact, deduce, verify>
+Observation: <the result of your action>
+
+Available actions:
+- check_fact: Review a specific fact from the list
+- deduce(A, relation, B): Try to derive whether A is related to B using logical rules (e.g., transitivity: if A∈B and B∈C, then A∈C)
+- verify(statement): Check if a statement is consistent with known facts
+
+Rules:
+- Transitivity: If X is a member of Y, and Y is a member of Z, then X is a member of Z.
+- Facts may be incomplete or inconsistent. You must detect and report any contradictions.
+
+Continue reasoning step by step until you reach a conclusion. Do not exceed 10 reasoning steps.
